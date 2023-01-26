@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms and Input tags </title>
+</head>
+
+<body>
+    <h2>
+        HTML tut for Forms and Input tags
+    </h2>
+    <form action="backend.php"> <!-- backend -->
+                                           <!-- Use of id -->
+        <label for="nameid">Name :</label> <!-- In lable: for = "Always give id name of input tag"-->
+         <div> <!-- The <div> tag defines a division or a section in an HTML document. -->
+            <input type="text" name="myName" id="nameid">
+            <!-- name="" is a name of that input tag which used in backend to store that input -->
+        </div>
+        <br> <!-- 'br' to break line but not recommended -->
+
+        <div>
+            Roll No: <input type="text" name="myRollNo"> <!-- input tag without lable-->
+        </div>
+        <br>
+
+        <label for="emailid"> Email: </label>
+        
+        <div>
+            <input type="email" name="myEmail" id="emailid">
+        </div>
+        <br>
+
+        <label for="dateid">Date: </label>
+        <div>
+            <input type="date" name="myDate" id="dateid">
+        </div>
+        <br>
+
+        <label for="numberid"> Bonus: </label>
+        <div>
+            <input type="number" name="myName" id="numberid">
+        </div>
+        <br>
+
+        <div>
+            Are you eligible ? :<input type="checkbox" name="myEligibility">
+        </div>
+        <br>
+
+        <div>
+           <strong> Gender:</strong> 
+            Male: <input type="radio" name="myGender" >
+            Female: <input type="radio" name="myGender" >
+            Other: <input type="radio" name="myGender" >
+        </div>
+        <br>
+
+        <label for="myInfoid">Write about yourself: </label>
+        <div>
+            <textarea name="myInfo" id="myInfoid" cols="50" rows="10"></textarea> <!-- textarea -->
+        </div>
+        <br>
+
+        <label for="yearid">Choose Year: </label>
+        <div>
+            <select name="year" id="yearid">
+                <option value="1stYear">1st Year</option>
+                <option value="2ndYear">2nd Year</option>
+                <option value="3rdYear">3rd Year</option>
+                <option value="4thYear">4th Year</option>
+            </select>
+        </div>
+        <br>
+
+        <div>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </div>
+    </form>
+</body>
+
+</html>
